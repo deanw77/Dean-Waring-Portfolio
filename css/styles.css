@@ -78,20 +78,48 @@
 }
 
 .card {
-    width: 90%;
+    width: 95%;
     margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-        "cardHeading cardHeading"
-        ". ."
-        ". ."
-        ". .";
+    margin-top: 30px;
+    border-bottom: 3px solid #F7941D;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.cardHeading {
-    grid-area: cardHeading;
-    text-align: center;
+#AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#AboutMe h3 {
+    border-bottom: 3px solid #F7941D;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+#AboutMe p {
+    padding: 6px;
+}
+
+#AboutMe .lastP {
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    #AboutMe {
+        flex-direction: row;
+    }
+
+    #AboutMe h3 {
+        border-right: 3px solid #F7941D;
+        border-bottom: none;
+        margin-right: 5px;
+        padding-right: 25px;
+        height: 150px;
+        width: 50%;
+        text-align: right;
+    }
+
 }
