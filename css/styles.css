@@ -1,0 +1,97 @@
+.mainBackground {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heroImage {
+    display: grid;
+    background-image: url(../images/keyboard.jpg);
+    width: 95%;
+    margin: auto;
+    height: 350px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 25px 25px 0 0 ;
+    margin-top: 8px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px 0px;
+    grid-template-areas: 
+        "profileImage HTMLLogo"
+        "briefText briefText"
+        "welcomeText moreButton";
+}
+
+#profileImage {
+    grid-area: profileImage;
+    width: 90%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#HTMLLogos {
+    grid-area: HTMLLogo;
+    width: 90%;
+    max-width: 200px;
+    margin: auto;
+}
+#briefText {
+    grid-area: briefText;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+#welcomeText {
+    grid-area: welcomeText;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 5px solid #F7941D;;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#moreButton{
+    grid-area: moreButton;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 5px solid #F7941D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#CTAbtn {
+    padding: 5px 10px;
+    background-color: #F7941D;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "cardHeading cardHeading"
+        ". ."
+        ". ."
+        ". .";
+}
+
+.cardHeading {
+    grid-area: cardHeading;
+    text-align: center;
+}
