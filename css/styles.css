@@ -1,252 +1,256 @@
 .mainBackground {
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .heroImage {
-    display: grid;
-    background-image: url(../images/keyboard.jpg);
-    width: 95%;
-    margin: auto;
-    height: 350px;
-    background-size: cover;
-    background-position: bottom;
-    border-radius: 25px 25px 0 0 ;
-    margin-top: 8px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 15px 0px;
-    grid-template-areas: 
-        "profileImage HTMLLogo"
-        "briefText briefText"
-        "welcomeText moreButton";
+  display: grid;
+  background-image: url(../images/keyboard.jpg);
+  width: 95%;
+  margin: auto;
+  height: 350px;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 25px 25px 0 0;
+  margin-top: 8px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px 0px;
+  grid-template-areas:
+    "profileImage HTMLLogo"
+    "briefText briefText"
+    "welcomeText moreButton";
 }
 
 #profileImage {
-    grid-area: profileImage;
-    width: 90%;
-    max-width: 200px;
-    border-radius: 50%;
-    margin: auto;
+  grid-area: profileImage;
+  width: 90%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin: auto;
 }
 
 #HTMLLogos {
-    grid-area: HTMLLogo;
-    width: 90%;
-    max-width: 200px;
-    margin: auto;
+  grid-area: HTMLLogo;
+  width: 90%;
+  max-width: 200px;
+  margin: auto;
 }
 #briefText {
-    grid-area: briefText;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 1.4em;
+  grid-area: briefText;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 1.4em;
 }
 
 #welcomeText {
-    grid-area: welcomeText;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 5px solid #F7941D;;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
+  grid-area: welcomeText;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid #f7941d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
 }
 
-#moreButton{
-    grid-area: moreButton;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 5px solid #F7941D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
+#moreButton {
+  grid-area: moreButton;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid #f7941d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
 }
 
 #CTAbtn {
-    padding: 5px 10px;
-    background-color: #F7941D;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #f7941d;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .card {
-    width: 95%;
-    margin: auto;
-    margin-top: 30px;
-    border-bottom: 3px solid #F7941D;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  border-bottom: 3px solid #f7941d;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 #AboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutHead {
-    width: 95%;
-    border-bottom: 3px solid #F7941D;
-    margin-bottom: 10px;
-    font-size: 1.4em;
+  width: 95%;
+  border-bottom: 3px solid #f7941d;
+  margin-bottom: 10px;
+  font-size: 1.4em;
 }
 
 .aboutHead h3 {
-    text-align: center;
+  text-align: center;
 }
 
 #AboutText {
-    width: 95%;
-    padding: 0 10px 0 10px;
+  width: 95%;
+  padding: 0 10px 0 10px;
 }
 
 #AboutText p {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .AboutText .lastP {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .workGrid {
-    margin: 0 5%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(4, minmax(100px, 1fr));
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas:
-        "workHeader"
-        "webDev"
-        "garminDev"
-        "Animation"
-        "logoDesign"
-        "mobileApps";
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(
+      4,
+      minmax(100px, 1fr)
+    );
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "workHeader"
+    "webDev"
+    "garminDev"
+    "Animation"
+    "logoDesign"
+    "mobileApps";
 }
 
 .workCard {
-    border-radius: 5px;
-    background-color: #bebebe;
-    width: 100%;
-    height: 100%;
-    margin: 4px auto;
-    text-align: center;
-    
-
+  border-radius: 5px;
+  background-color: #bebebe;
+  width: 100%;
+  height: 100%;
+  margin: 4px auto;
+  text-align: center;
 }
 
 #workHeader {
-    grid-area: workHeader;
-    border-bottom: 3px solid #F7941D;
-    align-self: center;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
+  grid-area: workHeader;
+  border-bottom: 3px solid #f7941d;
+  align-self: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
 }
 #workHeader h3 {
-    padding: 5px;
+  padding: 5px;
 }
 
 #webDev {
-    grid-area: webDev;
-    border-bottom: 3px solid #F7941D;
-    border-right: 3px solid #F7941D;
+  grid-area: webDev;
+  border-bottom: 3px solid #f7941d;
+  border-right: 3px solid #f7941d;
 }
 
 #garminDev {
-    grid-area: garminDev;
-    border-bottom: 3px solid #F7941D;
-    border-right: 3px solid #F7941D;
+  grid-area: garminDev;
+  border-bottom: 3px solid #f7941d;
+  border-right: 3px solid #f7941d;
 }
 
 #Animation {
-    grid-area: 3dAnimation;
-    border-bottom: 3px solid #F7941D;
-    border-right: 3px solid #F7941D;
+  grid-area: 3dAnimation;
+  border-bottom: 3px solid #f7941d;
+  border-right: 3px solid #f7941d;
 }
 
 #logoDesign {
-    grid-area: logoDesign;
-    border-bottom: 3px solid #F7941D;
-    border-right: 3px solid #F7941D;
+  grid-area: logoDesign;
+  border-bottom: 3px solid #f7941d;
+  border-right: 3px solid #f7941d;
 }
 
 #mobileApps {
-    grid-area: mobileApps;
-    border-bottom: 3px solid #F7941D;
-    border-right: 3px solid #F7941D;
+  grid-area: mobileApps;
+  border-bottom: 3px solid #f7941d;
+  border-right: 3px solid #f7941d;
 }
 
 @media only screen and (min-width: 600px) {
-    #AboutMe {
-        flex-direction: row;
-    }
+  #AboutMe {
+    flex-direction: row;
+  }
 
-    .aboutHead {
-        width: 25%;
-        border-bottom: none;
-        border-right: 3px solid #F7941D;
-        height: 200px;
-    }
+  .aboutHead {
+    width: 25%;
+    border-bottom: none;
+    border-right: 3px solid #f7941d;
+    height: 200px;
+  }
 
-    .aboutHead h3 {
-        text-align: right;
-        padding: 10px 10px 0 0 ;
-    }
+  .aboutHead h3 {
+    text-align: right;
+    padding: 10px 10px 0 0;
+  }
 
-    /* minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(4, minmax(100px, 1fr)) */
+  /* minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(4, minmax(100px, 1fr)) */
 
-    .workGrid {
-        /* margin: 0px 5%; */
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) repeat(3, minmax(50px, 1fr));
-        grid-template-areas:
-            "workHeader webDev webDev"
-            "workHeader webDev webDev"
-            "workHeader garminDev Animation"
-            "workHeader mobileApps Animation"
-            "workHeader logoDesign logoDesign";
-    }
-    
-    #workHeader {
-        grid-area: workHeader;
-        border-right: 3px solid #F7941D;
-        border-bottom: none;
-        align-self: center;
-        background-size: cover;
-        align-items: right;
-        justify-content: right;
-    }
-    #workHeader h3 {
-        padding: 15px;
-        text-align: end;
-    }
-    #workHeader {
-        grid-area: workHeader;
-    }
-    
-    #webDev {
-        grid-area: webDev;
-    }
-    
-    #garminDev {
-        grid-area: garminDev;
-    }
-    
-    #Animation {
-        grid-area: Animation;
-    }
-    
-    #logoDesign {
-        grid-area: logoDesign;
-    }
+  .workGrid {
+    /* margin: 0px 5%; */
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) repeat(
+        3,
+        minmax(50px, 1fr)
+      );
+    grid-template-areas:
+      "workHeader webDev webDev"
+      "workHeader webDev webDev"
+      "workHeader garminDev Animation"
+      "workHeader mobileApps Animation"
+      "workHeader logoDesign logoDesign";
+  }
+
+  #workHeader {
+    grid-area: workHeader;
+    border-right: 3px solid #f7941d;
+    border-bottom: none;
+    align-self: center;
+    background-size: cover;
+    align-items: right;
+    justify-content: right;
+  }
+  #workHeader h3 {
+    padding: 15px;
+    text-align: end;
+  }
+  #workHeader {
+    grid-area: workHeader;
+  }
+
+  #webDev {
+    grid-area: webDev;
+  }
+
+  #garminDev {
+    grid-area: garminDev;
+  }
+
+  #Animation {
+    grid-area: Animation;
+  }
+
+  #logoDesign {
+    grid-area: logoDesign;
+  }
 }

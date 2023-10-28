@@ -1,220 +1,221 @@
 /* Set Base Styles to Normalize  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* Set Background Colour for Whole Document */
 body {
-    background-color: #CCC;
+  background-color: #ccc;
 }
 
 /* Set Header Styles Using Mobile First Approach */
 .headerBackground {
-    background-color: #000000;
-    width: 100%;
+  background-color: #000000;
+  width: 100%;
 }
 
 .mainHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .mainLogo {
-    max-width: 120px;
-    padding-left: 10px;;
+  max-width: 120px;
+  padding-left: 10px;
 }
 
 .headerText {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 h1 {
-    font-size: 1.5em;
-    color: #F7941D;
+  font-size: 1.5em;
+  color: #f7941d;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #448ECC;
+  font-size: 1.5em;
+  color: #448ecc;
 }
 
 /* Remove Horizontal Nav on Small Screen View */
 .horNav {
-    display: none;
+  display: none;
 }
 
 /* Setup the Vertical Navigation onMobile View */
 .vertNav {
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* Create Animated Hamburger Menu using a little JavaScript */
 .hamburger-menu {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    cursor: pointer;
-    padding: 1rem;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
 }
 
 .ham-bar {
-    width: 70%;
-    height: 4px;
-    background-color: #F7941D;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform .6s, opacity .8s, top .6s;
+  width: 70%;
+  height: 4px;
+  background-color: #f7941d;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.8s, top 0.6s;
 }
 
 .bar-top {
-    top: 25%;
+  top: 25%;
 }
 
 .bar-bottom {
-    top: 75%;
+  top: 75%;
 }
 
 .hamburger-menu.active .bar-top {
-    transform: translate(-50%, -50%) rotate(-315deg);
-    top: 50%;
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
 }
 
 .hamburger-menu.active .bar-middle {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-menu.active .bar-bottom {
-    transform: translate(-50%, -50%) rotate(-225deg);
-    top: 50%;
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
 }
 
 /* Set Up the Slide In Menu */
 .off-screen-menu {
-    position: fixed;
-    top: 0;
-    right: -75%;
-    background-color: #333;
-    width: 75%;
-    border-radius: 0 0 0 30px;
-    transition: right .5s;
+  position: fixed;
+  top: 0;
+  right: -75%;
+  background-color: #333;
+  width: 75%;
+  border-radius: 0 0 0 30px;
+  transition: right 0.5s;
 }
 
 .off-screen-menu.active {
-    right: 0;
+  right: 0;
 }
 
 .off-screen-menu ul {
-    display: flex;
-    flex-direction: column;
-    padding: 28px;
-    padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  padding-top: 90px;
 }
 
 .off-screen-menu ul a {
-    display: flex;
-    flex-direction: column;
-    color: #448ECC;
-    padding: 5px;
-    border: 1px solid #F7941D;
-    margin: 5px;
-    text-align: center;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #448ecc;
+  padding: 5px;
+  border: 1px solid #f7941d;
+  margin: 5px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .off-screen-menu ul a:hover {
-    background-color: #F7941D;
-    color: #222;
+  background-color: #f7941d;
+  color: #222;
 }
 
 /* Set Up Media Queries for Larger Screens */
-@media only screen and (min-width: 628px) {
-    /* Remove Display of Mobile Menu */
-    .hamburger-menu {
-        display: none;
-    }
+@media only screen and (min-width: 640px) {
+  /* Remove Display of Mobile Menu */
+  .hamburger-menu {
+    display: none;
+  }
 
-    .off-screen-menu {
-        display: none;
-    }
+  .off-screen-menu {
+    display: none;
+  }
 
-    /* Place the Two H Tags One Single Row with Gap */
-    .headlines {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        /* gap: 28px; */
-        padding: 10px;
-    }
+  /* Place the Two H Tags One Single Row with Gap */
+  .headlines {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 28px; */
+    padding: 10px;
+  }
 
-    /* Display the Horizontal Navigation */
-    .horNav {
-        display: flex;
-        flex-direction: row;
-    }
+  /* Display the Horizontal Navigation */
+  .horNav {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .horNav ul {
-        display: flex;
-        flex-direction: row;
-    }
+  .horNav ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .horNav ul li {
-        padding: 0 2px 0 2px;;
-    }
+  .horNav ul li {
+    padding: 0 3px 0 2px;
+  }
 
-    .horNav ul li a {
-        display: flex;
-        margin: 0 2px 0 2px;
-        width: 74px;
-        height: 40px;
-        background-color: #000000;
-        /* border: 2px solid #3b3b3b; */
-        border-bottom: 0;
-        border-radius: 20px 20px 0 0;
-        box-shadow: 1px -1px 1px 1px #F7941D;
-        align-items: center;
-        justify-content: center;
-        color: #F7941D;
-        font-size: 0.7em;
-        padding: 0 5px 0 5px;
-    }
+  .horNav ul li a {
+    display: flex;
+    margin: 0 2px 0 2px;
+    width: 74px;
+    height: 40px;
+    background-color: #000000;
+    /* border: 2px solid #3b3b3b; */
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px -1px 1px 1px #f7941d;
+    align-items: center;
+    justify-content: center;
+    color: #f7941d;
+    font-size: 0.7em;
+    padding: 0 5px 0 5px;
+  }
 
-    .horNav ul a:hover {
-        background-color: #448ECC;
-        color: #000000;
-    }
+  .horNav ul a:hover {
+    background-color: #448ecc;
+    color: #000000;
+  }
 }
 
 /* Minor Adjustments for larger Screens just to Make text 
    slightly Larger */
 @media only screen and (min-width: 860px) {
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    .horNav ul a {
-        margin: 2px 4px 0 4px;
-        width: 100px;
-        height: 40px;
-        font-size: 0.9em;
-    }
+  h2 {
+    font-size: 2em;
+  }
+
+  .horNav ul li {
+    /* margin: 2px 4px 0 4px; */
+    padding: 0 6px 0 px;
+    width: 100px;
+    height: 40px;
+    font-size: 0.9em;
+  }
 }
