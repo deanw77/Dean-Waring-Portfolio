@@ -36,6 +36,7 @@
   max-width: 200px;
   margin: auto;
 }
+
 #briefText {
   grid-area: briefText;
   color: white;
@@ -87,16 +88,20 @@
 }
 
 #AboutMe {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 42px 1fr;
   align-items: center;
   justify-content: center;
+  grid-template-areas: 
+    "aboutHead"
+    "aboutText";
 }
 
 .aboutHead {
-  width: 95%;
+  grid-area: aboutHead;
+  width: 100%;
   border-bottom: 3px solid #f7941d;
-  margin-bottom: 10px;
   font-size: 1.4em;
 }
 
@@ -105,6 +110,7 @@
 }
 
 #AboutText {
+  grid-area: aboutText;
   width: 95%;
   padding: 0 10px 0 10px;
 }
@@ -112,6 +118,7 @@
 #AboutText p {
   padding-bottom: 10px;
 }
+
 .AboutText .lastP {
   padding-bottom: 20px;
 }
@@ -120,10 +127,7 @@
   margin: 0 5%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(
-      4,
-      minmax(100px, 1fr)
-    );
+  grid-template-rows: 42px minmax(100px, 2fr) repeat(4, minmax(100px, 1fr));
   grid-gap: 10px;
   justify-content: center;
   align-items: center;
@@ -152,13 +156,19 @@
   background-size: cover;
   align-items: center;
   justify-content: center;
+  font-size: 1.4em;
 }
+
 #workHeader h3 {
   padding: 5px;
 }
 
 #webDev {
   grid-area: webDev;
+  background-image: url(../images/webDevBack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
   border-bottom: 3px solid #f7941d;
   border-right: 3px solid #f7941d;
 }
@@ -170,7 +180,7 @@
 }
 
 #Animation {
-  grid-area: 3dAnimation;
+  grid-area: Animation;
   border-bottom: 3px solid #f7941d;
   border-right: 3px solid #f7941d;
 }
@@ -189,14 +199,16 @@
 
 @media only screen and (min-width: 600px) {
   #AboutMe {
-    flex-direction: row;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aboutHead aboutText";
   }
 
   .aboutHead {
-    width: 25%;
     border-bottom: none;
     border-right: 3px solid #f7941d;
-    height: 200px;
+    border-radius: 0 5px 0 0;
+    height: 100%;
   }
 
   .aboutHead h3 {
@@ -209,10 +221,7 @@
   .workGrid {
     /* margin: 0px 5%; */
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) repeat(
-        3,
-        minmax(50px, 1fr)
-      );
+    grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) repeat(3, minmax(50px, 1fr));
     grid-template-areas:
       "workHeader webDev webDev"
       "workHeader webDev webDev"
@@ -227,13 +236,15 @@
     border-bottom: none;
     align-self: center;
     background-size: cover;
-    align-items: right;
+    align-items: end;
     justify-content: right;
   }
+
   #workHeader h3 {
     padding: 15px;
     text-align: end;
   }
+
   #workHeader {
     grid-area: workHeader;
   }
