@@ -93,18 +93,97 @@
     justify-content: center;
 }
 
-#AboutMe h3 {
+.aboutHead {
+    width: 95%;
     border-bottom: 3px solid #F7941D;
     margin-bottom: 10px;
     font-size: 1.4em;
 }
 
-#AboutMe p {
-    padding: 6px;
+.aboutHead h3 {
+    text-align: center;
 }
 
-#AboutMe .lastP {
+#AboutText {
+    width: 95%;
+    padding: 0 10px 0 10px;
+}
+
+#AboutText p {
+    padding-bottom: 10px;
+}
+.AboutText .lastP {
     padding-bottom: 20px;
+}
+
+.workGrid {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(4, minmax(100px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "workHeader"
+        "webDev"
+        "garminDev"
+        "Animation"
+        "logoDesign"
+        "mobileApps";
+}
+
+.workCard {
+    border-radius: 5px;
+    background-color: #bebebe;
+    width: 100%;
+    height: 100%;
+    margin: 4px auto;
+    text-align: center;
+    
+
+}
+
+#workHeader {
+    grid-area: workHeader;
+    border-bottom: 3px solid #F7941D;
+    align-self: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+#workHeader h3 {
+    padding: 5px;
+}
+
+#webDev {
+    grid-area: webDev;
+    border-bottom: 3px solid #F7941D;
+    border-right: 3px solid #F7941D;
+}
+
+#garminDev {
+    grid-area: garminDev;
+    border-bottom: 3px solid #F7941D;
+    border-right: 3px solid #F7941D;
+}
+
+#Animation {
+    grid-area: 3dAnimation;
+    border-bottom: 3px solid #F7941D;
+    border-right: 3px solid #F7941D;
+}
+
+#logoDesign {
+    grid-area: logoDesign;
+    border-bottom: 3px solid #F7941D;
+    border-right: 3px solid #F7941D;
+}
+
+#mobileApps {
+    grid-area: mobileApps;
+    border-bottom: 3px solid #F7941D;
+    border-right: 3px solid #F7941D;
 }
 
 @media only screen and (min-width: 600px) {
@@ -112,14 +191,62 @@
         flex-direction: row;
     }
 
-    #AboutMe h3 {
-        border-right: 3px solid #F7941D;
+    .aboutHead {
+        width: 25%;
         border-bottom: none;
-        margin-right: 5px;
-        padding-right: 25px;
-        height: 150px;
-        width: 50%;
-        text-align: right;
+        border-right: 3px solid #F7941D;
+        height: 200px;
     }
 
+    .aboutHead h3 {
+        text-align: right;
+        padding: 10px 10px 0 0 ;
+    }
+
+    /* minmax(38px, 0.2fr) minmax(100px, 2fr) repeat(4, minmax(100px, 1fr)) */
+
+    .workGrid {
+        /* margin: 0px 5%; */
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) repeat(3, minmax(50px, 1fr));
+        grid-template-areas:
+            "workHeader webDev webDev"
+            "workHeader webDev webDev"
+            "workHeader garminDev Animation"
+            "workHeader mobileApps Animation"
+            "workHeader logoDesign logoDesign";
+    }
+    
+    #workHeader {
+        grid-area: workHeader;
+        border-right: 3px solid #F7941D;
+        border-bottom: none;
+        align-self: center;
+        background-size: cover;
+        align-items: right;
+        justify-content: right;
+    }
+    #workHeader h3 {
+        padding: 15px;
+        text-align: end;
+    }
+    #workHeader {
+        grid-area: workHeader;
+    }
+    
+    #webDev {
+        grid-area: webDev;
+    }
+    
+    #garminDev {
+        grid-area: garminDev;
+    }
+    
+    #Animation {
+        grid-area: Animation;
+    }
+    
+    #logoDesign {
+        grid-area: logoDesign;
+    }
 }
