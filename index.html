@@ -1,169 +1,45 @@
 <!DOCTYPE html>
-
-<!-- Dean Waring - Portfolio -->
-<!-- Last Updated 25/10/2023 -->
-
-<html lang="en">
+<html lang="en-gb">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Dean Waring" />
-    <meta name="description" content="Dean Waring, portfolio of projects." />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Blender, Software, Development" />
-
-    <title>Dean Waring | Portfolio</title>
-
-    <link rel="stylesheet" type="text/css" href="css/headerstyles.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lernantino // Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <div class="headerBackground">
-        <header class="mainHeader">
-            <img class="mainLogo" src="images/Logo.png" alt="Light Imaginations Logo" />
+  <!-- main logo / nav -->
+  <header>
+    <h1>Lernantino</h1>
+    <nav>
+    </nav>
+  </header>
 
-            <div class="headerText">
-                <div class="headlines">
-                    <h1>Dean Waring</h1>
-                    <h2>Portfolio</h2>
-                </div>
-
-                <nav class="horNav">
-                    <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Garmin Development</a></li>
-                        <li><a href="#">3D Animation</a></li>
-                        <li><a href="#">Logo Design</a></li>
-                        <li><a href="#AboutMe">About Me</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <nav class="off-screen-menu">
-                <ul>
-                    <li><a class="offScreenBtns" href="#">Web Development</a></li>
-                    <li><a class="offScreenBtns" href="#">Garmin Development</a></li>
-                    <li><a class="offScreenBtns" href="#">3D Animation</a></li>
-                    <li><a class="offScreenBtns" href="#">Logo Design</a></li>
-                    <li><a class="offScreenBtns" href="#AboutMe">About Me</a></li>
-                    <li><a class="offScreenBtns" href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-
-            <nav class="vertNav">
-                <div class="hamburger-menu">
-                    <div class="ham-bar bar-top"></div>
-                    <div class="ham-bar bar-middle"></div>
-                    <div class="ham-bar bar-bottom"></div>
-                </div>
-            </nav>
-        </header>
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div>
+      <h2>Cool subtitle here!</h2>
     </div>
+  </section>
 
-    <main class="mainBackground">
-        <section class="heroImage">
-            <img id="profileImage" src="images/Race.jpg" alt="ProfileImage" />
-            <img id="HTMLLogos" src="images/HTMLCSSJSlogos.png" alt="HTML CSS & JavaScript Logos" />
-            <h3 id="briefText">
-                Web Development, Graphic Design, Software Development
-            </h3>
-            <div id="welcomeText">
-                <p>Welcome to my projects page.</p>
-                <p>Still under development.</p>
-            </div>
-            <div id="moreButton">
-                <button id="CTAbtn">Contact Me</button>
-            </div>
-        </section>
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+    </section>
 
-        <section class="card" id="AboutMe">
-            <div class="aboutHead">
-                <h3>About Me</h3>
-            </div>
-            <div id="AboutText">
-                <p>
-                    Prior to moving to Web Development, I designed logo's and t-shirt
-                    designs for athletics clubs around the country. Managing the
-                    E-Commerce store and Social Media accounts as well. I've always had
-                    a love for the web and coding in general. It is this that pushed me
-                    to focus entirely on what I enjoy. Designing and Coding.
-                </p>
-                <p class="lastP">
-                    I do have a particular love for sports, as such most of the work
-                    I've done so far is focused on Running Clubs and Software
-                    development for the Garmin Fitness Platform. This is, however,
-                    something I am looking to expand on and am excited to take on a wide
-                    variety of new projects.
-                </p>
-            </div>
-        </section>
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+    </section>
 
-        <section class="workGrid">
-            <div class="workCard" id="workHeader">
-                <h3>My Work</h3>
-            </div>
-            <article class="workCard" id="webDev">
-                <h4>Web Development</h4>
-            </article>
-            <article class="workCard" id="garminDev">
-                <h4>Garmin Software</h4>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-                    voluptatum aperiam autem. Eligendi, illum. Vel sunt reprehenderit
-                    incidunt veniam, nisi placeat quasi hic obcaecati tempora neque
-                    commodi asperiores facilis sit!
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-                    voluptatum aperiam autem. Eligendi, illum. Vel sunt reprehenderit
-                    incidunt veniam, nisi placeat quasi hic obcaecati tempora neque
-                    commodi asperiores facilis sit!
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-                    voluptatum aperiam autem. Eligendi, illum. Vel sunt reprehenderit
-                    incidunt veniam, nisi placeat quasi hic obcaecati tempora neque
-                    commodi asperiores facilis sit!
-                </p>
-            </article>
-            <article class="workCard" id="Animation">
-                <h4>3D Animation</h4>
-            </article>
-            <article class="workCard" id="logoDesign">
-                <h4>Logo Design</h4>
-            </article>
-            <article class="workCard" id="mobileApps">
-                <h4>Mobile Applications</h4>
-            </article>
-        </section>
-
-        <section class="card" id="AboutMe">
-            <div class="aboutHead">
-                <h3>Contact Me</h3>
-            </div>
-            <div id="AboutText">
-                <p class="lastP">
-                    I do have a particular love for sports, as such most of the work
-                    I've done so far is focused on Running Clubs and Software
-                    development for the Garmin Fitness Platform. This is, however,
-                    something I am looking to expand on and am excited to take on a wide
-                    variety of new projects.
-                </p>
-            </div>
-        </section>
-
-        
-    </main>
-
-    <footer>
-            
-    </footer>
-    
-    <script src="js/script.js"></script>
+    <!-- contact -->
+    <section class="page-section contact" id="contact">
+      <h2>Contact Me</h2>
+    </section>
+  </main>
 </body>
 
 </html>
