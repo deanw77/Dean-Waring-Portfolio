@@ -17,6 +17,8 @@ header {
 }
 
 .headContainer {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     color: #F7941D;
@@ -51,15 +53,19 @@ nav ul a {
 
 /* Hero Image */
 .heroImage {
+    background-image: url(../images/keyboard.jpg);
+    background-size: cover;
+    background-position: bottom;  
+}
+
+.heroContainer {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: end;
     min-height: 100px;
-    background-image: url(../images/keyboard.jpg);
-    background-size: cover;
-    background-position: bottom;
-   
 }
 
 .heroImage img {
@@ -83,6 +89,8 @@ nav ul a {
 
 /* About Me  & Contact Me Styling*/
 .aboutMe, .contactMe, .work {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +176,7 @@ nav ul a {
     font-size: 0.6em;
 }
 
+/* Contact Me Section */
 .contactText li {
     margin: 6px;
     text-align: center;
@@ -197,3 +206,62 @@ footer h6 {
 footer img {
     height: 30px;
 }
+
+/* Media Queries */
+@media only screen and (min-width: 480px) {
+    .aboutMe, .contactMe {
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        text-align: right;
+    }
+
+    .aboutTitle, .contactTitle{
+        display: flex;
+        align-self: stretch;
+        justify-content: right;
+        text-align: left;
+        border-right: 3px solid #F7941D;
+        border-bottom: none;
+        border-radius: 0 10px 0 0;
+        text-align: right;
+        width: 25%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .aboutText,  .contactText {
+        padding: 10px;
+        font-weight:500;
+        width: 75%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 600px) {  
+    .headContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .workGrid {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 720px) { 
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(300px, 2fr) repeat(2, minmax(200px, 1fr));
+        grid-template-areas:
+            "WebDevelopment WebDevelopment"
+            "GarminDevelopment Animation"
+            "LogoDesigns JakesEatery";
+        grid-gap: 10px;
+    }
+    
+    .workGrid a {
+        font-size: 1.1em;
+    }
+} 
