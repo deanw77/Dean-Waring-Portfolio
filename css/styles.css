@@ -174,7 +174,8 @@ nav ul a {
     margin-bottom: 20px;
 }
 .workCardBox p {
-    font-size: 0.6em;
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
 /* Contact Me Section */
